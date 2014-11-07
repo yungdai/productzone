@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+ProductZone.create!(
+    :name  => "The old church on the coast of White sea",
+    :description => "An Online Image",
+    :price => 2.99,
+    :url    => "http://bitmakerlabs.s3.amazonaws.com/photogur/house.jpg"
+)
+
+
+ProductZone.create!(
+    :name  => "Sea Power",
+    :description => "Web Image",
+    :price => 2.99,
+    :url    => "http://bitmakerlabs.s3.amazonaws.com/photogur/wave.jpg"
+)

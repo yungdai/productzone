@@ -1,0 +1,9 @@
+<h1>Welcome to ProductZone!  What would you like buy today?</h1>
+<h2>There are <%= @productzones.length %> products for sale</h2>
+
+<% @productzones.each do |product| %>
+    <p>Product Name: <%= product.name %></p>
+    <p>Product Description: <%= product.description %></p>
+    <p>Price: <%= product.price %></p>
+    <%= link_to image_tag(product.url), "/productzone/#{product.id}" %>
+<% end %>
