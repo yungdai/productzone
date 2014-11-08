@@ -7,4 +7,6 @@ class ProductzoneController < ApplicationController
   def show
     @productzones = ProductZone.find(params[:id])
   end
+
+
 end
