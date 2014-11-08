@@ -5,7 +5,7 @@ class UserController < ApplicationController
 
   # method to add new users
   def new
-    @users = User.find(params[:id])
+    @user = User.new
   end
 
   def create
