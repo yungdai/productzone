@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141107235816) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "product_zones", force: true do |t|
     t.string   "name"
     t.string   "description"
