@@ -21,3 +21,12 @@ ProductZone.create!(
     :price => 2.99,
     :url    => "http://bitmakerlabs.s3.amazonaws.com/photogur/wave.jpg"
 )
+
+User.create!(
+    :user_firstname => "Yung",
+    :user_lastname => "Dai",
+    :user_email => "yungchidai@gmail.com",
+    :user_phone => "555-555-5555",
+    :password => "temp"
+
+)

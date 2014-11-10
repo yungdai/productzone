@@ -13,7 +13,7 @@ class UserController < ApplicationController
     @users = User.new(user_params)
     if @user.save
       # if the save for the picture was successful, go to index.html.erb
-      redirect_to productzone_url
+      redirect_to productzones_url
     else
       # otherwise render the view associated with the action :new (i.e. new.html.erb)
       render :new
